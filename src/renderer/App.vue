@@ -25,6 +25,10 @@
     components: {
       'nav-bar': Navbar
     },
+    mounted(){
+    this.$store.dispatch("getData")
+    
+  },
     data: () => ({
         
      
