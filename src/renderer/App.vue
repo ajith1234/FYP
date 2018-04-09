@@ -20,13 +20,16 @@
 <script>
    import Navbar from './components/Navbar.vue'
 
+   
+
   export default {
     name: 'cryptoprices',
     components: {
       'nav-bar': Navbar
     },
     mounted(){
-    this.$store.dispatch("getData")
+      this.$store.dispatch("getData")
+       
     
   },
     data: () => ({
